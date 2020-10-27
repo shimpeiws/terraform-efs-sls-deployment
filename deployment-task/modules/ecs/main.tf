@@ -33,7 +33,7 @@ resource "aws_ecs_task_definition" "deployment" {
       },
       "mountPoints": [{
         "sourceVolume": "efs-volume",
-        "containerPath": "/efs"
+        "containerPath": "/app/efs"
       }]
     }
   ]
