@@ -44,7 +44,7 @@ resource "aws_ecs_task_definition" "deployment" {
 
     efs_volume_configuration {
       file_system_id          = var.file_system_id
-      root_directory          = "/"
+      root_directory          = "/data"
     }
   }
 
