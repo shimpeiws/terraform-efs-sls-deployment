@@ -5,9 +5,10 @@ resource "aws_security_group" "efs" {
   vpc_id = var.vpc_id
 
   ingress {
-    from_port = 2049
-    to_port   = 2049
-    protocol  = "tcp"
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   egress {
@@ -55,7 +56,7 @@ resource "aws_efs_access_point" "efs_access_point" {
     creation_info {
       owner_gid   = 1001
       owner_uid   = 1001
-      permissions = 705
+      permissions = 750
     }
   }
 }
