@@ -1,0 +1,9 @@
+export SLS_DEBUG=*
+export AWS_ACCESS_KEY_ID="AWS_ACCESS_KEY_ID"
+export AWS_SECRET_ACCESS_KEY="AWS_SECRET_ACCESS_KEY"
+export SECURITY_GROUP_ID="sg-1234"
+export SUBNET_ID_01="subnet-1234"
+export SUBNET_ID_02="subnet-1234"
+export SUBNET_ID_03="subnet-1234"
+export EFS_ARN="arn:aws:elasticfilesystem:ap-northeast-1:607754652120:access-point/fsap-1234"
+export EFS_LOCAL_MOUNT_PATH="/mnt/efs"
